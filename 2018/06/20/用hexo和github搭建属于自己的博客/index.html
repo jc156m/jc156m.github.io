@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>建成的小屋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在网上看过很多大佬写的教程，但是首次搭建仍会遇到许多问题。在这里，我记录了我搭建博客的过程，贴上我踩过的坑，一方面是做个整理，另一方面是帮助看到文章的人少走些弯路。 [TOC] 本文主要介绍win10下hexo3.7.1+github的搭建。 搭建环境 安装git可以到git官网下载相应平台的版本进行安装。考虑到你可能是无照驾驶，直接在github/git下载。  申请github账号进入gith">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建成的小屋">
+<meta property="og:url" content="http://yoursite.com/2018/06/20/用hexo和github搭建属于自己的博客/index.html">
+<meta property="og:site_name" content="建成的小屋">
+<meta property="og:description" content="在网上看过很多大佬写的教程，但是首次搭建仍会遇到许多问题。在这里，我记录了我搭建博客的过程，贴上我踩过的坑，一方面是做个整理，另一方面是帮助看到文章的人少走些弯路。 [TOC] 本文主要介绍win10下hexo3.7.1+github的搭建。 搭建环境 安装git可以到git官网下载相应平台的版本进行安装。考虑到你可能是无照驾驶，直接在github/git下载。  申请github账号进入gith">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-20T10:32:12.697Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="建成的小屋">
+<meta name="twitter:description" content="在网上看过很多大佬写的教程，但是首次搭建仍会遇到许多问题。在这里，我记录了我搭建博客的过程，贴上我踩过的坑，一方面是做个整理，另一方面是帮助看到文章的人少走些弯路。 [TOC] 本文主要介绍win10下hexo3.7.1+github的搭建。 搭建环境 安装git可以到git官网下载相应平台的版本进行安装。考虑到你可能是无照驾驶，直接在github/git下载。  申请github账号进入gith">
+  
+    <link rel="alternate" href="/atom.xml" title="建成的小屋" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">建成的小屋</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">技术博客</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-用hexo和github搭建属于自己的博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/20/用hexo和github搭建属于自己的博客/" class="article-date">
+  <time datetime="2018-06-20T10:29:39.352Z" itemprop="datePublished">2018-06-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在网上看过很多大佬写的教程，但是首次搭建仍会遇到许多问题。在这里，我记录了我搭建博客的过程，贴上我踩过的坑，一方面是做个整理，另一方面是帮助看到文章的人少走些弯路。</p>
+<p>[TOC]</p>
+<p>本文主要介绍win10下hexo3.7.1+github的搭建。</p>
+<h1 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h1><ol>
+<li><p>安装git<br>可以到git官网下载相应平台的版本进行安装。考虑到你可能是无照驾驶，直接在github/git下载。</p>
+</li>
+<li><p>申请github账号<br>进入github注册。此处省略一千字。</p>
+</li>
+<li><p>安装node.js<br>到node.js官网下载相应平台的最新版本，傻瓜式安装（自带安装npm）。</p>
+</li>
+<li><p>安装hexo<br>打开git bash或者cmd，执行以下命令:</p>
+<table><td bgcolor="MidnightBlue"><br><font color="white">npm install -g  hexo-cli<br></font><br></td></table><br>如果没有错误提示，那么在git的交互环境输入以下命令查看git版本：<br><table><td bgcolor="MidnightBlue"><br><font color="white"> hexo version<br></font><br></td></table>
+
+</li>
+</ol>
+<p>#搭建hexo</p>
+<p>首先创建一个文件夹，如blog，用来存放hexo的配置文件等，然后进入blog进行操作。</p>
+<ol>
+<li>初始化<br>右键 git bash，执行以下命令:<table><td bgcolor="MidnightBlue"><font color="white">hexo init  </font></td></table><br>2. 安装依赖包<br><table><td bgcolor="MidnightBlue"><font color="white"> npm install</font></td></table></li>
+<li>生成静态页面<table><td bgcolor="MidnightBlue"><br><font color="white"> hexo generate或者hexo g </font></td></table></li>
+<li>本地运行<br><table><td bgcolor="MidnightBlue"><br><font color="white"> hexo server或者hexo s </font>  </td></table><br>打开浏览器，在地址栏输入localhost:4000，就可以看到我们搭建好的本地博客了。到此只是搭建好了本地博客，还需要将博客部署到github上。</li>
+</ol>
+<p>#配置github</p>
+<ol>
+<li><p>新建repository<br>建立与你用户名对应的仓库，仓库名必须为【 your_username.github.io】 。</p>
+</li>
+<li><p>部署博客<br>进入你的hexo文件夹根目录下，用编辑器打开_config.yml，修改deploy项，如下（根据你的github进行相应更改）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: git       #注意：有的版本type是github</span><br><span class="line"> repo: https://github.com/你的账户名/你的账户名.github.io.git</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>此时就完成部署了，用浏览器访问xiaobinhong1.github.io即可(第一次发布可能会有10分钟的延迟)。</p>
+<p>每次修改完本地的文件后要执行以下命令，重新部署到github上：</p>
+<table><td bgcolor="MidnightBlue"><br><font color="white"> hexo clean <br><br>hexo generate <br><br>hexo deploy或者hexo d<br></font><br></td></table>
+
+<p>#部署时保证README.md文件不被渲染<br>确保README.md文件不被渲染很容易，只要在博客根目录下的配置文件_config.yml中配置一下”skip_render”选项就行了，将不需要渲染的文件名称加入的其选项下就行了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">skip_render: README.md</span><br></pre></td></tr></table></figure></p>
+<p>#常用命令</p>
+<table><td bgcolor="MidnightBlue"><br><font color="white"><br>hexo new “postName”   // 新建文章 <br><br>hexo new page “pageName”  // 新建页面 <br><br>hexo generate    // 生成静态页面至public目录<br><br>hexo server   // 开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br><br>hexo deploy  // 将.deploy目录部署到GitHub<br><br>hexo help    //  查看帮助<br><br>hexo version   // 查看Hexo的版本<br></font><br></td></table>
+
+
+<h1 id="error-解决方法"><a href="#error-解决方法" class="headerlink" title="error 解决方法"></a>error 解决方法</h1><p>1.出现 error deployer not found:git 或者 error deployer not found:github 的错误<br>解决办法：执行 npm install hexo-deployer-git –save</p>
+<p>2.出现类似 FATAL can not read a block mapping entry; a multiline key may not be an implicit key at line 70, column 1: … 错误<br>解决办法：_config.yml中配置项的冒号后面要用空格隔开，再跟内容</p>
+<p>3.中文乱码问题<br>解决办法：将内容所在文件的编码改为UTF8格式</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/20/用hexo和github搭建属于自己的博客/" data-id="cjimzcnny0001x4r9avc1zf9x" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello Hexo</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/06/20/用hexo和github搭建属于自己的博客/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/20/hello-world/">Hello Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 jc<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
